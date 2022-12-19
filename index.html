@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Create Account</title>
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css" />
+        <!-- SCRIPT -->
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="main-container">
+                <form
+                    action="account-created.html"
+                    class="create-form"
+                    id="create--form"
+                >
+                    <h3>Create your account</h3>
+                    <p>Start your journey with us!</p>
+
+                    <div class="user-container">
+                        <div class="user">
+                            <input
+                                type="text"
+                                class="username"
+                                id="username"
+                                placeholder="Username"
+                            />
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+
+                    <div class="email-container">
+                        <div class="email-cont">
+                            <input
+                                type="email"
+                                class="email"
+                                id="email"
+                                placeholder="Email"
+                            />
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+
+                    <div class="pass-container">
+                        <div class="pass">
+                            <input
+                                type="password"
+                                class="password"
+                                id="password"
+                                placeholder="Password"
+                            />
+                            <i class="fa-solid fa-key"></i>
+                        </div>
+                    </div>
+
+                    <div class="confirmpass-container">
+                        <div class="conf--pass">
+                            <input
+                                type="password"
+                                class="password"
+                                id="confirm--password"
+                                placeholder="Confirm Password"
+                            />
+                            <i class="fa-solid fa-key"></i>
+                        </div>
+                    </div>
+
+                    <div class="term--con">
+                        <input
+                            type="checkbox"
+                            name="term"
+                            id="term"
+                            class="chckbx"
+                        />
+                        <label class="termcon" for="term"
+                            >I agree to the Terms & Conditions</label
+                        >
+                    </div>
+
+                    <input
+                        type="submit"
+                        class="submit--btn"
+                        value="Create my account"
+                    />
+                </form>
+            </div>
+            <p class="logIn">Already have an account? <a href="">Log in</a></p>
+        </div>
+    </body>
+</html>

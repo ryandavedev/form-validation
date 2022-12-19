@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+}
+
+.main {
+    background-color: #0b1619;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logIn {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #bdbdbd;
+}
+
+.logIn a {
+    color: #0084ff;
+    text-decoration: none;
+}
+
+.logIn a:hover {
+    color: white;
+}
+
+.main-container {
+    padding: 20px 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    border-radius: 20px;
+}
+
+.main-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: inline-block;
+}
+
+.create-form h3 {
+    font-size: 2.3em;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.create-form p {
+    font-size: 1em;
+    color: #a6a6a6;
+    font-weight: 500;
+    font-weight: 400;
+
+    margin-bottom: 20px;
+}
+
+.username,
+.password,
+.email {
+    height: 50px;
+    width: 400px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+
+    padding: 10px 0px 10px 50px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: white;
+
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.username:focus,
+.password:focus,
+.email:focus {
+    outline: none;
+    border-color: #0084ff;
+}
+
+.user,
+.pass,
+.email-cont,
+.conf--pass {
+    position: relative;
+}
+.user i,
+.pass i,
+.email-cont i,
+.conf--pass i {
+    position: absolute;
+    top: 26%;
+    left: 5%;
+
+    font-size: 1.2em;
+    color: white;
+}
+
+.chckbx {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 3px;
+
+    transform: scale(1.5);
+}
+.chckbx:hover {
+    cursor: pointer;
+}
+
+label {
+    color: #bdbdbd;
+    margin-left: 10px;
+}
+.submit--btn {
+    height: 40px;
+    width: 400px;
+
+    background-color: #0084ff;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit--btn:hover {
+    cursor: pointer;
+    background-color: #0e63b2;
+}
+
+.error {
+    display: flex;
+    color: #f54545;
+}
+
+.error p {
+    margin-left: 5px;
+    color: #f54545;
+    font-size: 0.9em;
+}
